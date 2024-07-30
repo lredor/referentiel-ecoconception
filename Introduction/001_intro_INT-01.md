@@ -8,7 +8,7 @@ page-background: backgrounds/vincent2.jpg
 Ce référentiel s’adresse à l’ensemble des parties prenantes intervenant dans le cycle de vie d’un service numérique, par exemple :
 
 **Le métier**, qui exprime ses besoins
-**Le Product Owne**r, qui traduit les besoins en exigences fonctionnelles
+**Le Product Owner**, qui traduit les besoins en exigences fonctionnelles
 **Les UX/UI designers**, qui conçoivent l’interface utilisateur
 **Les intégrateurs et développeurs**, qui traduisent les maquettes en code
 **Les Ops**, qui s’assurent de la disponibilité du service numérique
