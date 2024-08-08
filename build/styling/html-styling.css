@@ -1,0 +1,624 @@
+/* Pandoc CSS for Evidence-based Hiring eBook
+   Forked from: https://gist.github.com/killercup/5917178 */
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/poppins-latin-ext-400.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/poppins-latin-ext-500.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/poppins-latin-ext-600.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/poppins-latin-ext-700.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/poppins-latin-400.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/poppins-latin-500.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/poppins-latin-600.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/poppins-latin-700.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --primary-50: hsl(220, 75%, 97%);
+  --primary-100: hsl(220, 75%, 93%);
+  --primary-200: hsl(220, 75%, 89%);
+  --primary-300: hsl(202, 100%, 69%);
+  --primary-500: hsl(202, 100%, 34%);
+  --primary-700: hsl(205, 100%, 23%);
+  --primary-900: hsl(208, 100%, 19%);
+  --gray-500: hsl(208, 24%, 40%);
+  --text-muted: var(--gray-500);
+}
+
+html {
+  color: var(--primary-900);
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body,
+p,
+span,
+button {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+
+  body,
+  p,
+  span,
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+body {
+  line-height: 1.7;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 1rem;
+  margin: auto;
+  max-width: 50rem;
+}
+
+a.footnote-ref {
+  vertical-align: super; /* Change: footnote superscript. */
+}
+
+a:not(.btn), a:not(.btn):visited, a:not(.btn):active {
+  color: var(--primary-500);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:not(.btn):hover, a:not(.btn):focus {
+  color: var(--primary-700);
+  text-decoration: underline;
+}
+
+*::-moz-selection {
+  background: var(--primary-500);
+  color: #f8f9fa;
+}
+
+*::selection {
+  background: var(--primary-500);
+  color: #f8f9fa;
+}
+
+a::-moz-selection {
+  background: var(--primary-500);
+  color: #f8f9fa;
+}
+
+a::selection {
+  background: var(--primary-500);
+  color: #f8f9fa;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+  display: block; /* Change: img centering: https://stackoverflow.com/a/7055404/10546849 */
+  margin: 0 auto;
+}
+
+img.not-centered {
+  display: inline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 125%;
+  margin-top: 2rem;
+  font-weight: 600;
+  text-align: center; /* Change: all titles are centered. */
+}
+
+h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+blockquote {
+  color: var(--text-muted);
+  margin: 0;
+  padding-left: 3rem;
+  border-left: 0.5rem var(--primary-100) solid;
+}
+
+hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid var(--primary-200);
+  margin: 2rem 0;
+  padding: 0;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 0.98rem;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+ins {
+  background: #ff9;
+  text-decoration: none;
+}
+
+mark {
+  background: #ff0;
+  font-style: italic;
+  font-weight: bold;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5rem;
+}
+
+sub {
+  bottom: -0.25rem;
+}
+
+ul, ol {
+  margin: 1rem 0;
+  padding: 0 0 0 2rem;
+}
+
+li p:last-child {
+  margin-bottom: 0;
+}
+
+ul ul, ol ol {
+  margin: .3rem 0;
+}
+
+dl {
+  margin-bottom: 1rem;
+}
+
+dt {
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+dd {
+  margin: 0 0 .8rem 2rem;
+}
+
+dd:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+figure {
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+figure img {
+  border: none;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0 0 .8rem;
+}
+
+table {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: .2rem 1rem;
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+table td {
+  padding: .2rem 1rem;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  vertical-align: top;
+}
+
+#page-header {
+  padding: 8px;
+  text-align: center;
+  padding: 4.5rem 1rem;
+  background-color: var(--primary-50);
+}
+
+#page-header h1 {
+  margin: 0;
+  cursor: pointer;
+}
+
+#nav-buttons-header {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+#nav-buttons-footer {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+#front-page-summary {
+  margin-bottom: 40px;
+}
+
+#front-page-image {
+  float: right;
+  height: 340px;
+  margin: 0 20px;
+  border-radius: 0.5rem;
+}
+
+#page-footer {
+  padding: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#share-buttons a img {
+  display: inline;
+}
+
+#copyright :is(h2, h3) {
+  text-align: left;
+}
+
+#copyright strong {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: 500;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+#copyright-license {
+  display: flex;
+  gap: 1rem;
+}
+
+.author {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 1;
+  outline: 0;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 0.5rem;
+  transition: background-color 0.15s,
+  border-color 0.15s,
+  box-shadow 0.15s;
+}
+
+.btn svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.btn-translucent {
+  background: var(--primary-100);
+  color: var(--primary-500);
+}
+
+.btn-translucent:not(:disabled):focus {
+  box-shadow: 0 0 0 transparent,
+  0 0 0 0.25rem rgb(38 132 185 / 50%);
+}
+
+.btn-translucent:hover {
+  background-color: var(--primary-200);
+  color: var(--primary-700);
+}
+
+.btn-translucent:disabled {
+  color: #6c757d;
+  background-color: rgba(108, 117, 125, 0.1);
+  cursor: not-allowed;
+}
+
+.btn-translucent svg {
+  fill: #006FAD;
+}
+
+.btn-translucent:hover svg {
+  fill: #004e7a;
+}
+
+.btn-translucent:disabled svg {
+  fill: #6c757d;
+}
+
+.btn-amazon {
+  display: inline-block;
+  background-color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0px 5px;
+}
+
+.btn-amazon img {
+  display: inline;
+  border-radius: 0.5rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  #page-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #page-footer {
+    flex-flow: column;
+    gap: 2rem;
+  }
+
+  #front-page-image {
+    margin: 50px 10px 0 10px;
+    height: 200px;
+  }
+
+  #front-page-buttons {
+    display: block;
+    text-align: center;
+  }
+
+  #share-buttons {
+    display: block;
+    margin: auto;
+  }
+
+  #nav-buttons-header button {
+    display: block;
+    margin-top: 10px;
+  }
+
+  #copyright-license {
+    flex-flow: column;
+  }
+
+  #copyright-license img {
+    width: 200px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .w-md-auto {
+    width: auto;
+  }
+
+  .w-md-50 {
+    width: 50%
+  }
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    max-width: 100%;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid black;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    padding-right: 1rem;
+    page-break-inside: avoid;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page :left {
+    margin: 15mm 20mm 15mm 10mm;
+  }
+
+  @page :right {
+    margin: 15mm 10mm 15mm 20mm;
+  }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
