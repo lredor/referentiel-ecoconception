@@ -17,7 +17,7 @@ build:
   artifacts:
     expose_as: 'artifact 1'
     paths:
-      - Referentiel-ECOCONCEPTION.pdf
+      - public
 
 pages:
   stage: deploy
