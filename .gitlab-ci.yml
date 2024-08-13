@@ -1,0 +1,34 @@
+default:
+  tags: 
+    - $NOM_EQUIPE 
+  interruptible: true
+image: 
+  name: pandoc/latex
+  entrypoint: ["/bin/sh", "-c"]
+stages: 
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - mkdir output
+    - pandoc --output=Referentiel-ECOCONCEPTION.pdf Introduction/*.md strategie/*.md ux/*.md
+  artifacts:
+    expose_as: 'artifact 1'
+    paths:
+      - Referentiel-ECOCONCEPTION.pdf
+
+pages:
+  stage: deploy
+  tags:
+    - gitlab-pages
+  script:
+    - echo "publication"
+  script:
+    - mkdir -p public
+    - cp -r Referentiel-ECOCONCEPTION.pdf public 
+    - echo "<html><body><h1>Référentiel d'éco-conception</h1><a href=\"Referentiel-ECOCONCEPTION.pdf\">Référentiel d'écoconception</a></body></html>" > public/index.html
+  artifacts:
+    paths:
+      - public
