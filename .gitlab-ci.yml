@@ -12,7 +12,7 @@ stages:
 build:
   stage: build
   script:
-    - pandoc --output=Referentiel-ECOCONCEPTION.pdf Introduction/*.md strategie/*.md ux/*.md
+    - pandoc --pdf-engine xelatex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths --output=Referentiel-ECOCONCEPTION.pdf introduction/*.md strategie/*.md ux/*.md
   artifacts:
     paths:
       - Referentiel-ECOCONCEPTION.pdf
