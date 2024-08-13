@@ -16,7 +16,7 @@ build:
     - pandoc --output=Referentiel-ECOCONCEPTION.pdf Introduction/*.md strategie/*.md ux/*.md
   artifacts:
     paths:
-      - public
+      - Referentiel-ECOCONCEPTION.pdf
 
 pages:
   stage: deploy
