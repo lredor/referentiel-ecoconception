@@ -12,11 +12,10 @@ stages:
 build:
   stage: build
   script:
-    - mkdir public
     - pandoc --output=Referentiel-ECOCONCEPTION.pdf Introduction/*.md strategie/*.md ux/*.md
   artifacts:
     paths:
-      - public/Referentiel-ECOCONCEPTION.pdf
+      - Referentiel-ECOCONCEPTION.pdf
 
 pages:
   stage: deploy
@@ -24,7 +23,8 @@ pages:
     - gitlab-pages
   script:
     - echo "publication"
-  script:
+    - mkdir public
+    - cp Referentiel-ECOCONCEPTION.pdf public
     - echo "<html><body><h1>Référentiel d'éco-conception</h1><a href=\"Referentiel-ECOCONCEPTION.pdf\">Référentiel d'écoconception</a></body></html>" > public/index.html
   artifacts:
     paths:
