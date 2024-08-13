@@ -9,8 +9,8 @@ Aujourd’hui, **la part du Numérique dans les émissions de gaz à effet de se
 
 Pour illustrer, en 2020 la répartition de l’empreinte carbone du numérique représentait :
 
-![Composant numerique](/img/composant_numerique.png)
+![Composant numerique](img/composant_numerique.jpg)
 
 Un des axes de travail pour réduire le poids du numérique est l’écoconception
 
-![Eco conception des services numeriques](/img/ecoconception_des_services_numeriques.png)
+![Eco conception des services numeriques](img/ecoconception_des_services_numeriques.jpg)

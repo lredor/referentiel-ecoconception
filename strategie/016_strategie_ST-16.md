@@ -25,7 +25,7 @@ En tant que développeur, j'utilise un outil en capacité de m’informer sur le
 L’application de certaines bonnes pratiques de ce référentiel contribuent à minimiser le nombre d’éléments du DOM (ex : supprimer les éléments décoratifs, utiliser des spritesheets CSS, combiner les fichiers javascript et CSS, etc.)
 
 
-![Exemple d'utilisation du DOM](/img/exemple_d_utilisation_du_DOM.avif)
+![Exemple d'utilisation du DOM](img/exemple_d_utilisation_du_DOM.jpg)
 *Exemple d'utilisation du DOM*
 
 ## Tests d’acceptance :
