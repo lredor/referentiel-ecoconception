@@ -15,7 +15,6 @@ build:
     - mkdir public
     - pandoc --output=Referentiel-ECOCONCEPTION.pdf Introduction/*.md strategie/*.md ux/*.md
   artifacts:
-    expose_as: 'artifact 1'
     paths:
       - public
 
