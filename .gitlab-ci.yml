@@ -12,7 +12,7 @@ stages:
 build:
   stage: build
   script:
-    - mkdir output
+    - mkdir public
     - pandoc --output=Referentiel-ECOCONCEPTION.pdf Introduction/*.md strategie/*.md ux/*.md
   artifacts:
     expose_as: 'artifact 1'
@@ -26,8 +26,6 @@ pages:
   script:
     - echo "publication"
   script:
-    - mkdir -p public
-    - cp -r Referentiel-ECOCONCEPTION.pdf public 
     - echo "<html><body><h1>Référentiel d'éco-conception</h1><a href=\"Referentiel-ECOCONCEPTION.pdf\">Référentiel d'écoconception</a></body></html>" > public/index.html
   artifacts:
     paths:
