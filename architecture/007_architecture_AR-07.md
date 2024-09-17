@@ -1,0 +1,31 @@
+---
+code: AR-07
+page-background: backgrounds/vincent2.jpg
+sous-famille: Données
+responsable: Data scientist / Ops produit
+benefice: Environnement
+bonne-pratique-essentielle: oui
+---
+# AR-07 - Utiliser un format de données adapté
+
+## Description
+
+Il existe différents types de formats de fichiers pour échanger de la donnée. Chaque format a ses propres avantages et inconvénients selon les cas d’utilisation et existe pour servir un ou plusieurs objectifs. Voici une liste non exhaustive des formats de fichiers couramment utilisés et de leurs cas d’usages :
+
+| Formats                           | Description                                                                                                                                                                                                                                                | Cas d’usages (non exhaustifs)co                                                                                                                                                                                                                                                               |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| XML (eXten-sible Markup Langage)  | Format utilisé pour l’échange de données et le stockage structuré                                                                                                                                                                                     | À moins que la source de données ne l’impose, il faut éviter d’utiliser l’XML en raison de sa grande                                                                                                                                                                                     |
+| CSV (Comma Separated Values).     | Fichier texte qui permet d’échanger des données sous forme de table                                                                                                                                                                                     | Petits datasets ; L’exploration/importation de données; Fichiers de tests                                                                                                                                                                                                                    |
+| JSON (JavaScript Object Notation) | Représentation sans schéma, en texte clair, de données structurées basées sur des paires nom/valeur et des listes ordonnées. ; Basé sur un sous-ensemble de JS                                                                                      | Petits datasets ; Chargements asynchrone ; APIs ; Bases de données NoSQL (ex: MongoDB, CouchDB, Riak, etc.)                                                                                                                                                                                   |
+| AVRO                              | Format de sérialisation de données orienté lignes dans l’écosystème Hadoop                                                                                                                                                                           | Big data ; Traitement en streaming ; Schémas de données qui changent au fil du temps ; Utilisable dans un contexte RPC (Remote Procedure Call) ; Largement utilisé dans de nombreuses applications (Kafka, Spark,etc.)                                                                      |
+| Protobuf (Protocol Buffers)       | Format de sérialisation de données orienté lignes développé par Google. Il stocke de manière efficace et compacte des données structurées sous forme binaire. Prend en charge un large éventail de langages et est indépendant de la plateforme. | Largement utilisé dans les protocoles de communication entre applications ou microservices; Largement utilisé dans le stockage de données; Traitements par batch et en streaming ; Utilisable dans un contexte RPC (Remote Procedure Call) ; Non conçu pour gérer des messages volumineux |
+| Parquet                           | Format de stockage de données orienté colonne qui fournit des optimisations pour accélérer les requêtes. Il s’agit d’un format de fichier beaucoup plus efficace que CSV ou JSON.                                                                   | Traitement et stockage de très gros volumes de données ayant une structure complexe ; Ne convient pas à l’ajout de données en continu ou à la modification fréquente de données existantes ; Couramment utilisé avec Spark, Impala, Arrow et Drill                                    |
+| ORC                               | Format de stockage de données orienté colonne                                                                                                                                                                                                            | Traitement et stockage de très gros volumes de données ayant une structure complexe ; Ne convient pas à l’ajout de données en continu ou à la modification fréquente de données existantes ;Couramment utilisé avec Hive                                                              |
+
+## Mise en œuvre
+
+En tant que Data scientist / Ops produit, je choisis le format de données le plus efficient au vu de mon cas d’usage ou du modèle de données pris en charge par ma base données (cf tableau). Au besoin, je peux tester plusieurs formats de données pour déterminer le plus adapté.
+
+## Tests d’acceptance
+
+Le choix du format de données a été réalisé en prenant en compte les contraintes liées au cas d’usage ou au modèle de données pris en charge par la base de données.
