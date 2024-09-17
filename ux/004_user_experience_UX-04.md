@@ -1,12 +1,13 @@
 ---
 code: UX-04
-title: Adopter une approche mobile first
 page-background: backgrounds/vincent2.jpg
 sous-famille: Principes de design
 responsable: PO et UX designer
 benefice: Environnement
 ---
-## Description :
+# UX-04 - Adopter une approche mobile first
+
+## Description
 
 L’approche mobile first consiste à concevoir un service numérique pour les terminaux mobiles, et élargir sa couverture fonctionnelle pour de plus grands écrans uniquement si l’apport fonctionnel/ergonomique est justifié. 
 
@@ -18,7 +19,7 @@ Privilégier l’approche “Mofile first” pour :
 * Fournir un affichage optimal sur mobile
 * Certains sites pourront être conçus uniquement pour desktop
 
-## Mise en œuvre :
+## Mise en œuvre
 
 En tant que PO / PM:
 
@@ -31,7 +32,7 @@ En tant que UX / UI Designer :
 * Je pense mon interface pour l’utilisation à une main
 * Puis je conçois une version Desktop que j’enrichis si besoin
 
-## Tests d’acceptance :
+## Tests d’acceptance
 
 * Part d’usage de mon service : au moins à 30% sur mobile (Analytics)La conception est pensée Mobile.
 * Contrainte d’usage à une main

@@ -1,12 +1,13 @@
 ---
 code: ST-09
-title: Définir une stratégie d'archivage et de suppression des contenus obsolètes
 page-background: backgrounds/vincent2.jpg
 sous-famille: Application de la démarche
 responsable: Editeurs de contenus, PO/PM
 benefice: Environnement
 ---
-## Description :
+# ST-09 - Définir une stratégie d'archivage et de suppression des contenus obsolètes
+
+## Description
 
 91% de toutes les pages du web n’ont aucun trafic sur Google (Ahrefs, 2018). Dès lors, on peut s’interroger sur la valeur du contenu produit, et d’une manière plus générale, sur la stratégie éditoriale adoptée.
 Une stratégie éditoriale sobre consiste à :
@@ -16,7 +17,7 @@ Une stratégie éditoriale sobre consiste à :
 - Adopter une diffusion raisonnée des contenus
 - Piloter le cycle de vie des contenus
 
-## Mise en œuvre :
+## Mise en œuvre
 
 En tant qu’éditeur de contenus :
 
@@ -26,7 +27,7 @@ En tant qu’éditeur de contenus :
 
 En tant que PO/PM je m’assure qu’une stratégie d’archivage et de suppression des contenus obsolète a bien été définie dans le cadre de mon produit.
 
-## Tests d’acceptance :
+## Tests d’acceptance
 
 - Une stratégie éditoriale sobre a été définie
 - Cette stratégie est appliquée par tous les contributeurs à l’échelle du service numérique

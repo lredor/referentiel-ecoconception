@@ -1,16 +1,17 @@
 ---
 code: ST-05
-title: Définir une stratégie de décommissionnement
 page-background: backgrounds/vincent2.jpg
 sous-famille: Application de la démarche
 responsable: Equipe produit
 benefice: Coûts
 ---
-## Description :
+# ST-05 - Définir une stratégie de décommissionnement 
+
+## Description
 
 Afin de ne pas laisser actifs des données, composants ou matériels utilisés par le service numérique non utilisé, il est important d'identifier et de prévoir les dépendances entre matériels et fonctionnalités déployés. L'identification des scénarios de fin d'usage ou de vie pour les composants matériels, logiciels et les données décommissionnés doit aussi être anticipée.
 
-## Mise en œuvre :
+## Mise en œuvre
 
 En tant qu’équipe produit, je définis une stratégie de fin de vie :
 
@@ -20,6 +21,6 @@ En tant qu’équipe produit, je définis une stratégie de fin de vie :
 - des données, composants, matériel que le nouveau service en place va permettre de décommissionner
   Je rédige cette stratégie dans la documentation opérationnelle de la démarche. Je peux m’appuyer sur les éléments partagés dans démarche produit.
 
-## Tests d’acceptance :
+## Tests d’acceptance
 
 - Une stratégie de décommissionnement a été élaborée, rédigée dans la documentation opérationnelle et partagée à toute l’équipe.

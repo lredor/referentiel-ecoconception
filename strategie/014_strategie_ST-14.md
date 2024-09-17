@@ -1,12 +1,13 @@
 ---
 code: ST-14
-title: Mesurer l’expérience utilisateur
 page-background: backgrounds/vincent2.jpg
 sous-famille: Pilotage
 responsable: Equipe produit
 benefice: Performance
 ---
-## Description :
+# ST-14 - Mesurer l’expérience utilisateur
+
+## Description
 
 L’UX a pour objectif d’offrir une expérience utilisateur fluide, agréable et intuitive.
 Certains indicateurs permettent de mesurer le niveau d’écoconception du produit ou service numérique, en vue de l’améliorer :
@@ -15,7 +16,7 @@ Certains indicateurs permettent de mesurer le niveau d’écoconception du produ
 - Le taux d’abandon
 - Le taux de clics, etc...
 
-## Mise en œuvre :
+## Mise en œuvre
 
 A mettre en oeuvre avec un plan de taguage avec l’équipe Audience et mesures
 En tant qu’équipe produit (PM, PO, data analyst, UX designer)
@@ -27,7 +28,7 @@ Je m’assure que :
   En tant qu’UX designer
 - Je réalise des tests utilisateurs pour m’assurer qu’ils peuvent effectuer leurs tâches en un minimum de temps.
 
-## Tests d’acceptance :
+## Tests d’acceptance
 
 - Les indicateurs d’UX sont vérifiés tout au long du cycle de vie du service numérique
 - Le TTI est inférieur à 7,3s

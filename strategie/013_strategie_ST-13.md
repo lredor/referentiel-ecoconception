@@ -1,12 +1,13 @@
 ---
 code: ST-13
-title: Suivre les métriques fournies par les Core Web Vitals
 page-background: backgrounds/vincent2.jpg
 sous-famille: Pilotage
-responsable: Développeur + / référenceur SEO
+responsable: Développeur / référenceur SEO
 benefice: Performance
 ---
-## Description :
+# ST-13 - Suivre les métriques fournies par les Core Web Vitals
+
+## Description
 
 Les métriques de performance et de consommation d’un service numérique permettent d’identifier au plus tôt les problèmes (lenteur, surconsommation, etc.) liés à une fonctionnalité.
 Les Core Web Vitals, ou Signaux Web Essentiels, sont 4 indicateurs définis par Google et mesurant la performance d’une page en fonction de données d'utilisation réelles :
@@ -27,11 +28,11 @@ Les standards définis par Google sont les suivants :
 
 Pour en savoir plus, se référer à la [documentation Google associée](https://support.google.com/webmasters/answer/9205520?#status_explanation).
 
-## Mise en œuvre :
+## Mise en œuvre
 
 En tant que développeur, plusieurs outils sont à ma disposition pour surveiller les Core Web Vitals, par exemple la [Google Search Console](https://search.google.com/search-console/about) ou encore l’outil [WebPageTest](https://www.webpagetest.org/). Cet outil alimente un dashboard qui me permet de suivre les Core Web Vitals du service tout au long de son cycle de vie.
 
-## Tests d’acceptance :
+## Tests d’acceptance
 
 Les Core Web Vitals sont suivis tout au long du cycle de vie du service numérique
 

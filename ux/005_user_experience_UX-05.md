@@ -1,16 +1,17 @@
 ---
 code: UX-05
-title: Concevoir un parcours utilisateur simple et efficace
 page-background: backgrounds/vincent2.jpg
 sous-famille: Parcours utilisateur
 responsable: PO/ UX designer
 benefice: Utilisabilité
 ---
-## Description :
+# UX-05 - Concevoir un parcours utilisateur simple et efficace
+
+## Description
 
 Le service doit proposer des parcours simples et fluides afin de permettre à l’utilisateur d’effectuer sa tâche, tout en limitant son temps passé sur l’interface limitant ainsi la consommation énergétique.
 
-## Mise en œuvre :
+## Mise en œuvre
 
 **Pour un service numérique existant**
 En tant que PO et UX/UI designer :
@@ -22,7 +23,7 @@ En tant que PO et UX/UI designer :
 **Pour un nouveau service numérique**
 En tant que PO et UX/UI designer, je m’assure que les parcours sont conçus en vue de minimiser le temps passé par l’utilisateur sur le service/produit.
 
-## Tests d’acceptance :
+## Tests d’acceptance
 
 Pour un parcours utilisateur existant donné,
 

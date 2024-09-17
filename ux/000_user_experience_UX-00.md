@@ -3,7 +3,7 @@ code: UX-00
 title: UX
 page-background: backgrounds/vincent2.jpg
 ---
-## UX :
+## UX
 
 Les choix effectués vis-à-vis du parcours utilisateur (appelé aussi « User Experience ») lors de la phase de conception du service numérique impactent directement l’empreinte environnementale qui lui est associée. En effet, d’une manière générale, l’élément qui pollue le moins est celui qui n’existe pas. Cette règle s’applique par extension aux fonctionnalités du service, d’autant plus que 70 % des fonctionnalités demandées par les utilisateurs ne sont jamais, ou rarement, utilisées. L’enjeu, ici, sera de **mieux déterminer le besoin métier, afin de développer uniquement les fonctionnalités essentielles.**
 

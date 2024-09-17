@@ -1,13 +1,14 @@
 ---
 code: UX-15
-title: Désactiver les services tiers non nécessaires et faciliter leur utilisation
 page-background: backgrounds/vincent2.jpg
 sous-famille: Service tiers
 responsable: Equipe produit
 benefice: Performance
           Environnement
 ---
-## Description :
+# UX-15 - Désactiver les services tiers non nécessaires et faciliter leur utilisation
+
+## Description
 
 Les services tiers sont des services proposés par des fournisseurs externes. Ex : publicités, analytics, tracking, contenus (image, texte, vidéo, etc.), chat, fonctionnalités avancées, scripts d’A/B testing…
 
@@ -15,7 +16,7 @@ Chaque service tiers supplémentaire alourdit le poids d’une page et bien souv
 
 Ce critère rejoint une des obligations du RGPD sur la demande de consentement avant de charger du contenu tiers.
 
-## Mise en œuvre :
+## Mise en œuvre
 
 En tant qu’équipe produit :
 
@@ -27,7 +28,7 @@ En tant qu’équipe produit :
 * Je minimise le nombre d’étapes permettant de refuser les cookies
 * Je ne mets pas en avant le bouton « accepter les cookies » de sorte à attirer le regard de l’utilisateur dessus et le faire accepter les cookies sans qu’il en ait eu l’intention
 
-## Tests d’acceptance :
+## Tests d’acceptance
 
 * Une analyse des services tiers utilisés par le service numérique a été réalisée
 * Seuls les services tiers identifiés comme indispensables sont chargés

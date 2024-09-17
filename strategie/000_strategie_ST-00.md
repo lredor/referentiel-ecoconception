@@ -3,7 +3,7 @@ code: ST-00
 title: STRATEGIE
 page-background: backgrounds/vincent2.jpg
 ---
-## STRATEGIE :
+## STRATEGIE
 
 Axer la stratégie mise en place autour d’un service numérique sur la réduction de ses impacts environnementaux tout au long de son cycle de vie est un premier pas vers l’écoconception. Les leviers que nous avons identifiés sont notamment :
 
