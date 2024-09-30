@@ -1,6 +1,5 @@
 ---
 code: INT-04
-title: ORGANISATION DU RÉFÉRENTIEL 
 page-background: backgrounds/vincent2.jpg
 ---
 # ORGANISATION DU RÉFÉRENTIEL

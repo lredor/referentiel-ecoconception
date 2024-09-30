@@ -1,6 +1,5 @@
 ---
 code: ST-00
-title: STRATEGIE
 page-background: backgrounds/vincent2.jpg
 ---
 ## STRATEGIE

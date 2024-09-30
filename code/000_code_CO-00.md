@@ -1,6 +1,5 @@
 ---
 code: CO-00
-title: CODE
 page-background: backgrounds/vincent2.jpg
 ---
 ## CODE

@@ -1,6 +1,5 @@
 ---
 code: AR-00
-title: ARCHITECTURE
 page-background: backgrounds/vincent2.jpg
 ---
 ## ARCHITECTURE

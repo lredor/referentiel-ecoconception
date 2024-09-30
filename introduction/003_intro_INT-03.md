@@ -1,6 +1,5 @@
 ---
 code: INT-03
-title: NOTRE DEMARCHE
 page-background: backgrounds/vincent2.jpg
 ---
 # NOTRE DÉMARCHE

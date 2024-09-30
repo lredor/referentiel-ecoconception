@@ -1,6 +1,5 @@
 ---
 code: UX-00
-title: UX
 page-background: backgrounds/vincent2.jpg
 ---
 ## UX

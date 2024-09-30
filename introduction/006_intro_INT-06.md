@@ -1,6 +1,5 @@
 ---
 code: INT-06
-title: TABLEAU RÉCAPITULATIF DES MÉTRICS CLÉS SUR UN SERVICE
 page-background: backgrounds/vincent2.jpg
 ---
 # TABLEAU RÉCAPITULATIF DES MÉTRICS CLÉS SUR UN SERVICE

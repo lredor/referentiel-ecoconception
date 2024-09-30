@@ -1,6 +1,5 @@
 ---
 code: INT-02
-title: LE NUMÉRIQUE RESPONSABLE
 page-background: backgrounds/vincent2.jpg
 ---
 # LE NUMÉRIQUE RESPONSABLE

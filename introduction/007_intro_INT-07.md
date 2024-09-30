@@ -1,6 +1,5 @@
 ---
 code: INT-07
-title: SOMMAIRE
 page-background: backgrounds/vincent2.jpg
 ---
 # SOMMAIRE

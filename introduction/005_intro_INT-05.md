@@ -1,9 +1,8 @@
 ---
 code: INT-05
-title: BONNES PRATIQUES ESSENTIELLES
 page-background: backgrounds/vincent2.jpg
 ---
-BONNES PRATIQUES ESSENTIELLES
+# BONNES PRATIQUES ESSENTIELLES
 
 Les Bonnes Pratiques Essentielles sont une sélection de BP front et back à mettre en œuvre en priorité sur un service.
 Elles ont été choisies en fonction de leur potentiel de gain environnemental et leur facilité d’intégration. Elles sont classées par catégories.

@@ -1,6 +1,5 @@
 ---
 code: INT-01
-title: INTRODUCTION
 page-background: backgrounds/vincent2.jpg
 ---
 # PUBLIC VISÉ
