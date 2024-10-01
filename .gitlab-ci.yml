@@ -3,7 +3,7 @@ default:
     - $NOM_EQUIPE 
   interruptible: true
 image: 
-  name: pandoc/latex
+  name: pandoc/extra
   entrypoint: ["/bin/sh", "-c"]
 stages: 
   - build
