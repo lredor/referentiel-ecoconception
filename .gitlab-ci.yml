@@ -12,7 +12,7 @@ stages:
 build:
   stage: build
   script:
-    - pandoc --pdf-engine xelatex --template pandoc-assets/templates/eisvogel.latex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths --output=Referentiel-ECOCONCEPTION.pdf introduction/*.md strategie/*.md ux/*.md code/*.md architecture/*.md
+    - pandoc --pdf-engine xelatex --template pandoc-assets/templates/eisvogel.latex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths --output=Referentiel-ECOCONCEPTION.pdf introduction/*.md strategie/*.md ux/*.md ui/*.md code/*.md architecture/*.md
   artifacts:
     paths:
       - Referentiel-ECOCONCEPTION.pdf
