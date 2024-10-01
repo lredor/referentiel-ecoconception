@@ -4,7 +4,7 @@ default:
   interruptible: true
 image: 
   name: pandoc/extra
-  volumes: $(pwd):/data
+  volume: $(pwd):/data
   entrypoint: ["/bin/sh", "-c"]
 stages: 
   - build
