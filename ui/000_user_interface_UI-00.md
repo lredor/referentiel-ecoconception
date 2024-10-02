@@ -1,6 +1,5 @@
 ---
 code: UI-00
-title: UI
 page-background: backgrounds/vincent2.jpg
 ---
 ## UI
