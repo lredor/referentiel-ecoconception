@@ -11,7 +11,7 @@ benefice: Environnement
 
 Dans un contexte où la transformation digitale des entreprises est en plein essor, chaque geste compte.
 Aujourd’hui, **73% des français ne réalisent pas l’impact du digital sur l’environnement**, il est donc essentiel de provoquer dès à présent une prise de conscience chez eux et leur donner les clés pour agir.
-Une fois les collaborateurs sensibilisés et formés aux enjeux et bonnes pratiques clés de l’écoconception, il est nécessaire de leur fournir les moyens de mettre en œuvre ce qu’ils ont appris. Réaliser le plan de formation à l’écoconception est un moyen simple et efficace pour y parvenir.
+Une fois les collaborateurs sensibilisés et formés aux enjeux et bonnes pratiques clés de l’écoconception, il est nécessaire de leur fournir les moyens de mettre en œuvre ce qu’ils ont appris. Réaliser le plan de formation à l’écoconception est un moyen simple et efficace pour y parvenir
 Par ailleurs, une documentation compréhensible, claire et détaillée sur la mise en œuvre concrète des bonnes pratiques d’écoconception doit être mise à disposition des collaborateurs.
 Un accompagnement de proximité peut aussi être mis en place pour guider les équipes qui le souhaitent et approfondir les bonnes pratiques.
 

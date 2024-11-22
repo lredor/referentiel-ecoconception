@@ -41,5 +41,4 @@ disable-header-and-footer: false
 header-includes: |
   \usepackage{sectsty}
   \sectionfont{\clearpage}
-
 ---
