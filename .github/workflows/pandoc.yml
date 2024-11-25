@@ -11,10 +11,7 @@ jobs:
       - name: create file list
         id: files_list
         run: |
-#          echo "Lorem ipsum" > lorem_1.md  # create two example files
-#          echo "dolor sit amet" > lorem_2.md
           mkdir output  # create output dir
-#          echo "files=$(printf '"%s" ' *.md)" > $GITHUB_OUTPUT
           $GITHUB_OUTPUT="introduction/*.md strategie/*.md ux/*.md ui/*.md code/*.md architecture/*.md"
 
       - uses: docker://pandoc/latex
