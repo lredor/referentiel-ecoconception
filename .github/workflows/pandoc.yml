@@ -10,7 +10,7 @@ jobs:
       - run: 
           mkdir output
 
-      - uses: docker://pandoc/latex
+      - uses: docker://pandoc/extra
         with:
           # args: --output=output/Referentiel-ECOCONCEPTION.pdf --metadata-file pandoc-assets/meta.yml --pdf-engine xelatex --metadata-file pandoc-assets/meta.yml --template pandoc-assets/templates/eisvogel.tex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths introduction/*.md strategie/*.md ux/*.md ui/*.md code/*.md architecture/*.md 
           args: --output=output/Referentiel-ECOCONCEPTION.pdf --metadata-file pandoc-assets/meta.yml --pdf-engine xelatex --metadata-file pandoc-assets/meta.yml --template pandoc-assets/templates/eisvogel.tex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths introduction/001_intro_INT-01.md
