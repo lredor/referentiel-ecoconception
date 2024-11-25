@@ -8,15 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: create file list
-        id: files_list
-        run: |
-          mkdir output  # create output dir
-          $GITHUB_OUTPUT="introduction/*.md strategie/*.md ux/*.md ui/*.md code/*.md architecture/*.md"
-
       - uses: docker://pandoc/latex
         with:
-          args: --output=output/Referentiel-ECOCONCEPTION.pdf ${{ steps.files_list.outputs.files }} --metadata-file pandoc-assets/meta.yml --pdf-engine xelatex --metadata-file pandoc-assets/meta.yml --template pandoc-assets/templates/eisvogel.tex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths
+          args: --output=output/Referentiel-ECOCONCEPTION.pdf introduction/*.md strategie/*.md ux/*.md ui/*.md code/*.md architecture/*.md --metadata-file pandoc-assets/meta.yml --pdf-engine xelatex --metadata-file pandoc-assets/meta.yml --template pandoc-assets/templates/eisvogel.tex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths
 
       - uses: actions/upload-artifact@v4
         with:
