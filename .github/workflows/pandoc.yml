@@ -7,13 +7,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: 
+
+      - name: create file list
+        id: files_list
+        run: |
+          echo "files=$(printf '%s ' ./introduction/*.md)" >> "$GITHUB_OUTPUT"
+          echo "files=$(printf '%s ' ./ux/*.md)" >> "$GITHUB_OUTPUT"
+          echo "files=$(printf '%s ' ./ui/*.md)" >> "$GITHUB_OUTPUT"
+          echo "files=$(printf '%s ' ./code/*.md)" >> "$GITHUB_OUTPUT"
+          echo "files=$(printf '%s ' ./architecture/*.md)" >> "$GITHUB_OUTPUT"
           mkdir output
 
       - uses: docker://pandoc/extra
         with:
-          args: --output=output/Referentiel-ECOCONCEPTION.pdf --metadata-file pandoc-assets/meta.yml --pdf-engine xelatex --metadata-file pandoc-assets/meta.yml --template pandoc-assets/templates/eisvogel.tex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths output/introduction/*.md output/strategie/*.md output/ux/*.md output/ui/*.md output/code/*.md output/architecture/*.md 
+          # args: --output=output/Referentiel-ECOCONCEPTION.pdf --metadata-file pandoc-assets/meta.yml --pdf-engine xelatex --metadata-file pandoc-assets/meta.yml --template pandoc-assets/templates/eisvogel.tex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths output/introduction/*.md output/strategie/*.md output/ux/*.md output/ui/*.md output/code/*.md output/architecture/*.md 
           # args: --output=output/Referentiel-ECOCONCEPTION.pdf --metadata-file pandoc-assets/meta.yml --pdf-engine xelatex --metadata-file pandoc-assets/meta.yml --template pandoc-assets/templates/eisvogel.tex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths introduction/001_intro_INT-01.md
+          args: --output=output/Referentiel-ECOCONCEPTION.pdf --metadata-file pandoc-assets/meta.yml --pdf-engine xelatex --metadata-file pandoc-assets/meta.yml --template pandoc-assets/templates/eisvogel.tex --from markdown+yaml_metadata_block+raw_html+rebase_relative_paths ${{ steps.files_list.outputs.files}} 
 
       - uses: actions/upload-artifact@v4
         with:
