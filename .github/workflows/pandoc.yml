@@ -11,11 +11,7 @@ jobs:
       - name: create file list
         id: files_list
         run: |
-          echo "files=$(printf '%s ' ./introduction/*.md)" >> "$GITHUB_OUTPUT"
-          echo "files=$(printf '%s ' ./ux/*.md)" >> "$GITHUB_OUTPUT"
-          echo "files=$(printf '%s ' ./ui/*.md)" >> "$GITHUB_OUTPUT"
-          echo "files=$(printf '%s ' ./code/*.md)" >> "$GITHUB_OUTPUT"
-          echo "files=$(printf '%s ' ./architecture/*.md)" >> "$GITHUB_OUTPUT"
+          echo "files=$(printf '%s ' ./introduction/*.md && printf '%s ' ./strategie/*.md && printf '%s ' ./ux/*.md && printf '%s ' ./ui/*.md && printf '%s ' ./code/*.md && printf '%s ' ./architecture/*.md)"  > "$GITHUB_OUTPUT"
           mkdir output
 
       - uses: docker://pandoc/extra
